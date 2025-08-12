@@ -1,0 +1,325 @@
+/* === BRIGHT PASTEL AESTHETIC CSS === */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@400;600&display=swap');
+
+html {
+  /* This creates the trendy gradient border by acting as a background for the body */
+  background: linear-gradient(45deg, #db539c, #e75e95, #a8668f);
+  padding: 8px;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #301520; /* Dark background */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3e%3ctext x='20' y='50' font-size='40' fill='%23fce7f3' opacity='0.1'%3e♪%3c/text%3e%3ctext x='150' y='80' font-size='60' fill='%23fce7f3' opacity='0.05'%3e♫%3c/text%3e%3ctext x='80' y='180' font-size='40' fill='%23fce7f3' opacity='0.08'%3e♩%3c/text%3e%3ctext x='250' y='220' font-size='30' fill='%23fce7f3' opacity='0.1'%3e♬%3c/text%3e%3ctext x='20' y='280' font-size='50' fill='%23fce7f3' opacity='0.06'%3e%E2%99%AD%3c/text%3e%3ctext x='200' y='20' font-size='40' fill='%23fce7f3' opacity='0.07'%3e%E2%99%AF%3c/text%3e%3c/svg%3e");
+  color: #cbd5e1; /* Light text color for readability on dark background */
+  margin: 0;
+  padding: 0;
+  border-radius: 12px;
+  overflow-x: hidden;
+  animation: float-notes 40s linear infinite;
+}
+
+/* Header */
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600; /* Explicitly set bold weight */
+  color: #ffffff; /* White color for the title */
+  margin-top: 40px;
+  /* A stronger shadow to make white text readable on a light background */
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #d76da2;
+  font-size: 35px;
+  margin: 32px 0 16px;
+}
+
+h3 {
+  color: #a067ab;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+/* Navigation */
+nav {
+  background-color: rgba(26, 32, 44, 0.7); /* Semi-transparent dark background */
+  backdrop-filter: blur(8px); /* Glassy effect */
+  text-align: center;
+  padding: 16px;
+  border-bottom: 2px dashed #582c5a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d065a5;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffdff0;
+  color: #973d7a;
+}
+
+/* === Music Quote Marquee === */
+.quote-banner {
+  background-color: #f8a9cc;
+  color: white;
+  padding: 12px 0;
+  overflow: hidden; /* Hides the text that is off-screen */
+  white-space: nowrap; /* Ensures the text stays on a single line */
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  margin: 32px 0;
+}
+
+.quote-banner:hover .quote-text {
+  animation-play-state: paused; /* Pauses the animation on hover */
+}
+
+.quote-text {
+  display: inline-block;
+  animation: scroll-text 40s linear infinite;
+}
+
+.quote-text span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 80px; /* Space between quotes */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Bright Gradient Backgrounds for Each Section */
+.intro {
+  background: linear-gradient(135deg, #ffe4ec, #fff1fa);
+}
+
+.artists {
+  background: linear-gradient(135deg, #f4f0ff, #ebe0ff);
+}
+
+.playlist {
+  background: linear-gradient(135deg, #e0fff7, #d1f9ed);
+}
+
+.blog {
+  background: linear-gradient(135deg, #fff9e0, #fff4cc);
+}
+
+.gallery {
+  background: linear-gradient(135deg, #fefbf4, #fdf4e8);
+}
+
+.contact {
+  background: linear-gradient(135deg, #e6f0ff, #f2f7ff);
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Images */
+img {
+  border: 2px solid #ffe0ea;
+  border-radius: 15px;
+  margin: 1rem auto;
+  display: block;
+  max-width: 90%;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Embedded content */
+iframe {
+  display: block;
+  margin: 32px auto;
+  border-radius: 16px;
+  border: 2px solid #ffcfe0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Buttons */
+button, .btn {
+  background-color: #ffd4e2;
+  color: #853e6e;
+  border: 2px solid #f8a9cc;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+button:hover, .btn:hover {
+  background-color: #f8a9cc;
+  color: white;
+}
+
+/* === SOCIAL MEDIA LAYOUT === */
+.social-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
+  max-width: 1280px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.sidebar-widget {
+  background-color: #ffffff;
+  border: 2px solid #ffcfe0;
+  border-radius: 15px;
+  padding: 24px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.profile-bio {
+  font-size: 14px;
+  color: #a067ab;
+  margin-bottom: 24px;
+}
+
+.artist-list {
+  text-align: left;
+  list-style-position: inside;
+  padding: 0;
+}
+
+.artist-list li {
+  margin-bottom: 12px;
+}
+
+.post {
+  background-color: #ffffff;
+  border: 2px solid #ffcfe0;
+  border-radius: 15px;
+  padding: 16px 32px 32px 32px;
+  margin-bottom: 32px;
+}
+
+.post h2 {
+  text-align: left;
+  margin-top: 16px;
+}
+
+.post h3 {
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 16px;
+}
+
+.post p {
+  font-size: 18px;
+}
+
+.gallery-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+  margin-top: 16px;
+}
+
+.gallery-preview img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Photo Grid for Gallery */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* The global img styles for border, radius, and shadow will apply */
+  transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Standalone main content for pages like the gallery */
+.page-main {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+/* Footer */
+.footer {
+  font-size: 14px;
+  color: #a0aec0; /* Lighter text for dark background */
+  text-align: center;
+  padding: 32px 16px;
+  border-top: 2px dotted #582c5a;
+}
+
+.footer a {
+  color: #d065a5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Keyframes for Marquee Animation */
+@keyframes scroll-text {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); } /* Moves the text by half its width */
+}
+
+/* Keyframes for Background Animation */
+@keyframes float-notes {
+  from { background-position: 0 0; }
+  to { background-position: 0 -300px; } /* The height of the SVG pattern */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .social-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
